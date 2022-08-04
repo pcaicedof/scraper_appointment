@@ -50,7 +50,7 @@ def get_driver(url):
     return driver
 
 def select_province(driver, exec_again, province):
-    print("select province")
+    print("select province ")
     print(province)
     try:
         print('Selecciona provincia')
@@ -74,7 +74,7 @@ def select_province(driver, exec_again, province):
     return exec_again
 
 def select_office(driver, exec_again, office):
-    print("select office")
+    print("select office ")
     print(office)
     try:
         office_list = driver.find_element(By.XPATH, '//*[@id="tramiteGrupo[1]"]')
