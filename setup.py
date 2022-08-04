@@ -9,6 +9,7 @@ Created on Tue Apr  7 19:41:31 2021
 import os
 import requests
 import time
+import winsound
 #Selenium
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -85,6 +86,9 @@ def select_office(driver, exec_again, office):
         print(f"error {e}")
         driver.close()
         exec_again = True
+    duration = 1000  # milliseconds
+    freq = 440  # Hz
+    winsound.Beep(freq, duration)
     print(exec_again)
     return exec_again
 
